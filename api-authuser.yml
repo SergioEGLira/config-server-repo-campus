@@ -50,3 +50,15 @@ resilience4j:
         minimumNumberOfCalls: 2
         waitDurationInOpenState: 30s
         failureRateThreshold: 80
+
+authuser:
+  refreshscope:
+    name: Testando o refreshscope.
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh
+          - health
