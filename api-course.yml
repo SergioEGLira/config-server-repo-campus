@@ -2,11 +2,15 @@ api:
   broker:
     exchange:
       usereventexchange: campus.userevent
+      notificationCommandExchange: api.notificationcommand 
     queue:
       usereventqueue:
-        name: campus.userevent.ms
+        name: campus.userevent.ms.course
+    key:
+      notificationCommandKey: ms.notification
   url:
     authuser: http://api-authuser/api-authuser/
+
 server:
   port: 8082
   servlet:
