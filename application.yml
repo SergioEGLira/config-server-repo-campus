@@ -2,6 +2,9 @@ api:
   serviceRegistry:
     username: serviceregistry
     password: '123sr'
+  auth:
+    jwtSecret: p2s5v8y/A?D(G+KbPeShVmYq3t6w9z$C&F)H@McQfTjWnZr4u7x!A%D*G-KaNdRg
+    jwtExpirationMs: 14400000
 
 eureka:
   client:
