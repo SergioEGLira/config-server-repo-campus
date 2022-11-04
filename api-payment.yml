@@ -22,6 +22,14 @@ spring:
   rabbitmq:
     addresses: amqps://kozkstqk:ctW6Ya10zT9Jy0w0l_tO6zTq21reVths@moose.rmq.cloudamqp.com/kozkstqk
  
+api:
+  broker:
+    exchange:
+      userEventExchange: campus.userevent
+    queue:
+      userEventQueue:
+        name: campus.userevent.ms.payment
+
 management:
   endpoints:
     web:
